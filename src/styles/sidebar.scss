@@ -1,7 +1,7 @@
 nav.sidebar {
   display: flex;
   flex-direction: column;
-
+  overflow: auto;
   align-items: center;
 
   max-width: 24rem;
@@ -12,7 +12,7 @@ nav.sidebar {
   background: var(--background2);
 
   > span {
-    margin-bottom: 4.5rem;
+    margin-bottom: 1.5rem;
     font-size: 3rem;
     font-weight: 600;
     color: var(--yellow);
@@ -26,7 +26,12 @@ nav.sidebar {
   .buttons-container {
     display: flex;
     flex-direction: column;
-
     width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  nav.sidebar {
+    display: none;
   }
 }
